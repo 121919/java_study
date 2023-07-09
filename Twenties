@@ -1,0 +1,15 @@
+import java.util.*;
+public class Twenties   {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+   
+      System.out.print("Enter your age: ");
+      int age = scanner.nextInt();
+      if((age>=20 && age<30))    {
+         System.out.print("You are 20. ");
+         System.out.print("You are happy because you are 20!");
+      }
+      else 
+         System.out.println("you are not 20");
+   }
+}
