@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class NestedIf {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter your score(0~100): ");
+      int score = scanner.nextInt();
+   
+      System.out.print("Enter your grade(1~4): ");
+      int year = scanner.nextInt();
+   
+      if (score >= 60) {
+         if (year != 4)
+            System.out.println("Pass!");
+         else if (score >= 70)
+            System.out.print("Pass!");
+         else
+            System.out.print("Fail!");
+      } else {
+         System.out.print("Fail!");
+      }
+   }
+}
