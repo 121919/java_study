@@ -1,0 +1,24 @@
+import java.util.*;
+public class Grading    {
+
+public static void main (String[] args) {
+
+Scanner scanner = new Scanner (System.in);
+
+System.out.print("Enter your score (0~100): ");
+
+int score = scanner.nextInt();
+
+if(score >= 90)
+score = 'A';
+else if(score >=80)
+score = 'B';
+else if(score >=70)
+score = 'C';
+else if(score >=60)
+score = 'D';
+else if(score >=50)
+score = 'F';
+System.out.print("Your grade is " + score);
+}
+}
