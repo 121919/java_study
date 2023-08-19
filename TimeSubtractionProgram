@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class TimeSubtractionProgram {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int H = sc.nextInt();
+        int M = sc.nextInt();
+        
+        
+        int newH = H;
+        int newM = M - 45;
+        
+        if (newM < 0) {
+            newM += 60;
+            newH--;
+            
+            if (newH < 0)
+                newH = 23;
+        }
+        
+        System.out.println(newH + " " + newM);
+    }
+}
