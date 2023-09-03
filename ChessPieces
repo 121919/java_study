@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class ChessPieces {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+   
+      int[] whitePieces = new int[6];
+   
+      for (int i = 0; i < 6; i++) {
+         whitePieces[i] = scanner.nextInt();
+      }
+   
+      int[] correctPieces = {1, 1, 2, 2, 2, 8};
+   
+      for (int i = 0; i < 6; i++) {
+         int difference = correctPieces[i] - whitePieces[i];
+         System.out.print(difference + " ");
+      }
+   }
+}
