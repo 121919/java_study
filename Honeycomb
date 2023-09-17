@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Honeycomb {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      int N = scanner.nextInt();
+   
+      int layer = 1;
+      int room = 1;
+      int count = 1; 
+   
+      while (room < N) {
+         room += 6 * layer; 
+         layer++; 
+         count++;
+      }
+   
+      System.out.println(count);
+   }
+}
